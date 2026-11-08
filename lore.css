@@ -1,0 +1,633 @@
+
+/* =========================================
+   ATEEZ WORLD — THE LORE ARCHIVES
+   Estilo exclusivo da página lore.html
+========================================= */
+
+.lore-page {
+    background:
+        radial-gradient(ellipse at 50% 0%, #38191b 0, transparent 40%),
+        #090808;
+}
+
+/* CAPA */
+
+.lore-hero {
+    min-height: 530px;
+    padding: 80px 9%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 2px solid var(--gold);
+
+    background:
+        linear-gradient(90deg, rgba(5, 5, 5, .96), rgba(20, 8, 10, .75)),
+        radial-gradient(circle at 75% 45%, #782a32, transparent 40%);
+}
+
+.lore-hero::before {
+    content: "";
+    position: absolute;
+    inset: 16px;
+    border: 1px solid rgba(226, 183, 126, .45);
+    pointer-events: none;
+}
+
+.lore-hero::after {
+    content: "✦";
+    position: absolute;
+    top: 15%;
+    right: 13%;
+    font-size: 180px;
+    color: rgba(226, 183, 126, .08);
+}
+
+.lore-hero-content {
+    max-width: 650px;
+    position: relative;
+    z-index: 2;
+}
+
+.lore-hero h1 {
+    font: 800 clamp(48px, 8vw, 90px)/1 'Cinzel', serif;
+    margin: 18px 0;
+    letter-spacing: 3px;
+}
+
+.lore-hero h1 em {
+    color: var(--light);
+    font-style: normal;
+}
+
+.lore-hero p {
+    max-width: 480px;
+    color: #e4d5c8;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.lore-button {
+    display: inline-flex;
+    padding: 13px 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--gold);
+    background: linear-gradient(130deg, #d49a5c, #96582d);
+    color: #160c08;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: 1px;
+    transition: .25s;
+}
+
+.lore-button:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.15);
+}
+
+.hourglass-art {
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: clamp(110px, 20vw, 230px);
+    color: rgba(226, 183, 126, .55);
+    text-shadow: 0 0 55px #b979463d;
+}
+
+.hero-coordinate {
+    position: absolute;
+    right: 6%;
+    bottom: 35px;
+    color: var(--gold);
+    letter-spacing: 3px;
+    font-size: 10px;
+}
+
+/* SEÇÕES */
+
+.lore-section {
+    padding: 75px 7%;
+    border-bottom: 1px solid rgba(197, 138, 75, .17);
+    scroll-margin-top: 95px;
+}
+
+.lore-heading {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto 35px;
+}
+
+.lore-heading h2 {
+    color: var(--light);
+    font: 700 clamp(25px, 4vw, 39px) 'Cinzel', serif;
+    margin: 10px 0;
+}
+
+.lore-heading p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* TEXTO */
+
+.lore-text-panel {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid rgba(197, 138, 75, .35);
+    background:
+        linear-gradient(140deg, rgba(82, 46, 29, .25), rgba(17, 13, 12, .96));
+    border-radius: 8px;
+    box-shadow: 0 12px 40px #0005;
+}
+
+.lore-text-panel p {
+    font-size: 13px;
+    color: #dfd0c1;
+    line-height: 2;
+    margin-bottom: 15px;
+}
+
+.lore-text-panel p:last-child {
+    margin-bottom: 0;
+}
+
+/* FRASE */
+
+.lore-quote {
+    max-width: 780px;
+    margin: 35px auto 0;
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.lore-quote span {
+    color: var(--gold);
+    font-size: 30px;
+}
+
+.lore-quote p {
+    font: italic 19px 'Cinzel', serif;
+    color: var(--light);
+    margin: 10px 0;
+}
+
+.lore-quote small {
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 2px;
+}
+
+/* MUNDOS */
+
+.worlds-section {
+    background:
+        radial-gradient(circle at 10% 60%, #40201d 0, transparent 30%),
+        radial-gradient(circle at 90% 30%, #141a32 0, transparent 30%);
+}
+
+.world-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.world-card {
+    padding: 30px;
+    border-radius: 9px;
+    min-height: 360px;
+    border: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+}
+
+.world-a {
+    background:
+        linear-gradient(145deg, rgba(91, 51, 34, .85), rgba(17, 13, 12, .96));
+}
+
+.world-z {
+    background:
+        linear-gradient(145deg, rgba(30, 35, 65, .8), rgba(10, 10, 17, .97));
+}
+
+.world-number {
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: var(--light);
+}
+
+.world-card h3 {
+    font: 700 30px 'Cinzel', serif;
+    margin-top: 12px;
+    color: var(--light);
+}
+
+.world-subtitle {
+    font-size: 11px;
+    color: #e3cbb0;
+}
+
+.world-symbol {
+    font-size: 60px;
+    margin: 18px 0;
+    filter: drop-shadow(0 0 20px #e2b77e45);
+}
+
+.world-card > p:last-child {
+    font-size: 12px;
+    line-height: 1.9;
+    color: #e0d4cb;
+}
+
+.strictland-panel {
+    max-width: 1100px;
+    margin: 22px auto 0;
+    padding: 30px;
+    border: 1px solid rgba(130, 145, 194, .35);
+    background: linear-gradient(120deg, #171d35, #0d0c12);
+    border-radius: 8px;
+}
+
+.strictland-panel h3 {
+    font: 700 25px 'Cinzel', serif;
+    color: #c3c9e8;
+    margin: 8px 0;
+}
+
+.strictland-panel p {
+    font-size: 12px;
+    line-height: 1.9;
+    color: #d4d4e1;
+    margin-top: 10px;
+}
+
+/* PERSONAGENS */
+
+.lore-character-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.lore-character {
+    min-height: 220px;
+    padding: 25px;
+    background: linear-gradient(145deg, #211514, #100d0d);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: .25s;
+}
+
+.lore-character:hover {
+    transform: translateY(-4px);
+    border-color: var(--light);
+}
+
+.character-symbol {
+    display: block;
+    font-size: 30px;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.lore-character h3 {
+    font: 700 17px 'Cinzel', serif;
+    color: var(--light);
+    margin-bottom: 10px;
+}
+
+.lore-character p {
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.9;
+}
+
+/* CROMER E ARTEFATOS */
+
+.artifact-section {
+    background:
+        radial-gradient(circle at 20% 50%, #44201b, transparent 30%),
+        #0c0a09;
+}
+
+.artifact-card {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    gap: 25px;
+    background: linear-gradient(120deg, #35201a, #15100f);
+    border: 1px solid var(--gold);
+    border-radius: 10px;
+}
+
+.artifact-icon {
+    font-size: 110px;
+    color: var(--light);
+    text-align: center;
+    text-shadow: 0 0 30px #d49a5c66;
+}
+
+.artifact-card h3 {
+    font: 700 28px 'Cinzel', serif;
+    color: var(--light);
+    margin: 8px 0;
+}
+
+.artifact-card p {
+    font-size: 12px;
+    color: #dfd0c1;
+    line-height: 1.9;
+    margin-top: 10px;
+}
+
+.artifact-mini-grid {
+    max-width: 1000px;
+    margin: 20px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.artifact-mini-grid article {
+    padding: 20px;
+    background: #171211;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.artifact-mini-grid span {
+    font-size: 27px;
+}
+
+.artifact-mini-grid h3 {
+    font: 600 15px 'Cinzel', serif;
+    color: var(--light);
+    margin: 8px 0;
+}
+
+.artifact-mini-grid p {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+/* DIÁRIOS */
+
+.diary-section {
+    background:
+        radial-gradient(circle at 80% 10%, #32171a, transparent 30%),
+        #0b0909;
+}
+
+.diary-intro {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    padding: 20px 25px;
+    background: #1a1211;
+    border-left: 3px solid var(--gold);
+}
+
+.diary-intro p {
+    font-size: 12px;
+    line-height: 1.9;
+    color: #d7c9bc;
+    margin-bottom: 10px;
+}
+
+.diary-intro p:last-child {
+    margin-bottom: 0;
+}
+
+.diary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.diary-card {
+    position: relative;
+    padding: 27px;
+    background:
+        linear-gradient(145deg, #2b1d19, #130f0e);
+    border: 1px solid rgba(197, 138, 75, .4);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: .25s;
+}
+
+.diary-card:hover {
+    border-color: var(--light);
+    transform: translateY(-3px);
+}
+
+.diary-number {
+    position: absolute;
+    top: 5px;
+    right: 18px;
+    font: 700 65px 'Cinzel', serif;
+    color: rgba(226, 183, 126, .09);
+}
+
+.diary-card h3 {
+    position: relative;
+    font: 700 23px 'Cinzel', serif;
+    color: var(--light);
+    margin-bottom: 4px;
+}
+
+.diary-theme {
+    display: inline-block;
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.diary-card p {
+    position: relative;
+    font-size: 11px;
+    line-height: 1.9;
+    color: #d9cbc0;
+    margin-bottom: 12px;
+}
+
+.diary-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* CRONOLOGIA */
+
+.lore-timeline {
+    max-width: 850px;
+    margin: auto;
+    border-left: 2px solid var(--gold);
+    padding-left: 25px;
+}
+
+.lore-timeline article {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.lore-timeline article::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--gold);
+    left: -32px;
+    top: 5px;
+    box-shadow: 0 0 12px #d49a5c88;
+}
+
+.lore-timeline article > span {
+    font: 700 20px 'Cinzel', serif;
+    color: var(--gold);
+    min-width: 35px;
+}
+
+.lore-timeline h3 {
+    font: 600 17px 'Cinzel', serif;
+    color: var(--light);
+}
+
+.lore-timeline p {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 5px;
+}
+
+.lore-disclaimer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 10px;
+    max-width: 750px;
+    margin: 15px auto 0;
+}
+
+/* NOTAS SOBRE A LORE */
+
+.lore-notes {
+    background: #100d0d;
+}
+
+.lore-legend {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.lore-legend span {
+    font-size: 10px;
+}
+
+.legend-confirmed {
+    color: #d9b27d;
+}
+
+.legend-theory {
+    color: #a9b4e0;
+}
+
+/* FINAL */
+
+.lore-return {
+    text-align: center;
+    padding: 80px 20px;
+    background:
+        radial-gradient(ellipse at center, #4a1c21, transparent 65%),
+        #090808;
+}
+
+.lore-return h2 {
+    font: 700 clamp(25px, 4vw, 40px) 'Cinzel', serif;
+    color: var(--light);
+    margin: 10px 0;
+}
+
+.lore-return p {
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+    .hourglass-art {
+        right: 7%;
+        opacity: .4;
+    }
+
+    .lore-character-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .artifact-mini-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .lore-hero {
+        min-height: 430px;
+        padding: 60px 8%;
+    }
+
+    .hourglass-art {
+        right: 5%;
+        top: 25%;
+        font-size: 100px;
+        opacity: .25;
+    }
+
+    .hero-coordinate {
+        font-size: 8px;
+    }
+
+    .lore-section {
+        padding: 50px 5%;
+    }
+
+    .world-grid,
+    .lore-character-grid,
+    .diary-grid,
+    .artifact-card {
+        grid-template-columns: 1fr;
+    }
+
+    .artifact-icon {
+        font-size: 75px;
+    }
+
+    .lore-text-panel {
+        padding: 20px;
+    }
+
+    .diary-card {
+        padding: 22px;
+    }
+
+    .lore-quote p {
+        font-size: 15px;
+    }
+}
